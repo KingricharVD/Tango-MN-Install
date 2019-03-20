@@ -38,7 +38,7 @@ sudo ufw limit ssh/tcp
 sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
-sudo ufw allow 9500/tcp
+sudo ufw allow 8484/tcp
   
 cd
 mkdir -p .tango
@@ -54,7 +54,7 @@ echo "maxconnections=256" >> tango.conf
 echo "addnode=192.250.236.139" >> tango.conf
 echo "addnode=155.138.224.172" >> tango.conf
 echo "addnode=45.77.226.105" >> tango.conf
-echo "port=9500" >> tango.conf
+echo "port=8484" >> tango.conf
 mv tango.conf .tango
 
   
