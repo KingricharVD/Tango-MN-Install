@@ -94,7 +94,7 @@ cd /usr/local/bin
 
 
 ### If you have any issues, please be sure to join our Discord and ask for support:
-### https://discord.gg/9nzt37V
+### https://discord.gg/3j95JAd
 
 
 ## For Windows setups, use this config in your masternode.conf or tango.conf (depending on if you are using a VPS or local wallet)
