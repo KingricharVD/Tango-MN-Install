@@ -78,3 +78,120 @@ echo "rpcport=8483" >> /home/tango/.tango/tango.conf
 echo "listen=0" >> /home/tango/.tango/tango.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):8484" >> /home/tango/.tango/tango.conf
 echo "masternodeprivkey=$privkey" >> /home/tango/.tango/tango.conf
+echo "addnode=192.250.236.139" >> /home/tango/.tango/tango.conf
+echo "addnode=155.138.224.172" >> /home/tango/.tango/tango.conf
+echo "addnode=45.77.226.105" >> /home/tango/.tango/tango.conf
+echo "addnode=195.181.216.136" >> /home/tango/.tango/tango.conf
+echo "addnode=194.48.168.103" >> /home/tango/.tango/tango.conf
+echo "addnode=194.182.77.240" >> /home/tango/.tango/tango.conf
+echo "addnode=199.247.0.128" >> /home/tango/.tango/tango.conf
+echo "addnode=207.246.68.57" >> /home/tango/.tango/tango.conf
+echo "addnode=81.2.255.167" >> /home/tango/.tango/tango.conf
+echo "addnode=45.76.134.69" >> /home/tango/.tango/tango.conf
+echo "addnode=80.211.201.13" >> /home/tango/.tango/tango.conf
+sleep 5
+echo -e "${GREEN}Configuring Wallet for second node${NC}"
+sudo mkdir /home/tango2/.tango
+sudo touch /home/tango2/.tango/tango.conf
+echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/tango2/.tango/tango.conf
+echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/tango2/.tango/tango.conf
+echo "rpcallowip=127.0.0.1" >> /home/tango2/.tango/tango.conf
+echo "server=1" >> /home/tango2/.tango/tango.conf
+echo "daemon=1" >> /home/tango2/.tango/tango.conf
+echo "maxconnections=250" >> /home/tango2/.tango/tango.conf
+echo "masternode=1" >> /home/tango2/.tango/tango.conf
+echo "rpcport=8485" >> /home/tango2/.tango/tango.conf
+echo "listen=0" >> /home/tango2/.tango/tango.conf
+echo "externalip=$(hostname  -I | cut -f1 -d' '):8484" >> /home/tango2/.tango/tango.conf
+echo "masternodeprivkey=$privkey" >> /home/tango2/.tango/tango.conf
+echo "addnode=192.250.236.139" >> /home/tango2/.tango/tango.conf
+echo "addnode=155.138.224.172" >> /home/tango2/.tango/tango.conf
+echo "addnode=45.77.226.105" >> /home/tango2/.tango/tango.conf
+echo "addnode=195.181.216.136" >> /home/tango2/.tango/tango.conf
+echo "addnode=194.48.168.103" >> /home/tango2/.tango/tango.conf
+echo "addnode=194.182.77.240" >> /home/tango2/.tango/tango.conf
+echo "addnode=199.247.0.128" >> /home/tango2/.tango/tango.conf
+echo "addnode=207.246.68.57" >> /home/tango2/.tango/tango.conf
+echo "addnode=81.2.255.167" >> /home/tango2/.tango/tango.conf
+echo "addnode=45.76.134.69" >> /home/tango2/.tango/tango.conf
+echo "addnode=80.211.201.13" >> /home/tango2/.tango/tango.conf
+sleep 5 
+echo -e "${GREEN}Configuring Wallet for third node${NC}"
+sudo mkdir /home/tango3/.tango
+sudo touch /home/tango3/.tango/tango.conf
+echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/tango3/.tango/tango.conf
+echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/tango3/.tango/tango.conf
+echo "rpcallowip=127.0.0.1" >> /home/tango3/.tango/tango.conf
+echo "server=1" >> /home/tango3/.tango/tango.conf
+echo "daemon=1" >> /home/tango3/.tango/tango.conf
+echo "maxconnections=250" >> /home/tango3/.tango/tango.conf
+echo "masternode=1" >> /home/tango3/.tango/tango.conf
+echo "rpcport=8486" >> /home/tango3/.tango/tango.conf
+echo "listen=0" >> /home/tango3/.tango/tango.conf
+echo "externalip=$(hostname  -I | cut -f1 -d' '):8484" >> /home/tango3/.tango/tango.conf
+echo "masternodeprivkey=$privkey" >> /home/tango3/.tango/tango.conf
+echo "addnode=192.250.236.139" >> /home/tango3/.tango/tango.conf
+echo "addnode=155.138.224.172" >> /home/tango3/.tango/tango.conf
+echo "addnode=45.77.226.105" >> /home/tango3/.tango/tango.conf
+echo "addnode=195.181.216.136" >> /home/tango3/.tango/tango.conf
+echo "addnode=194.48.168.103" >> /home/tango3/.tango/tango.conf
+echo "addnode=194.182.77.240" >> /home/tango3/.tango/tango.conf
+echo "addnode=199.247.0.128" >> /home/tango3/.tango/tango.conf
+echo "addnode=207.246.68.57" >> /home/tango3/.tango/tango.conf
+echo "addnode=81.2.255.167" >> /home/tango3/.tango/tango.conf
+echo "addnode=45.76.134.69" >> /home/tango3/.tango/tango.conf
+echo "addnode=80.211.201.13" >> /home/tango3/.tango/tango.conf
+sleep 5 
+echo -e "${GREEN}Configuring Wallet for 4th node${NC}"
+sudo mkdir /home/tango4/.tango
+sudo touch /home/tango4/.tango/tango.conf
+echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/tango4/.tango/tango.conf
+echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/tango4/.tango/tango.conf
+echo "rpcallowip=127.0.0.1" >> /home/tango4/.tango/tango.conf
+echo "server=1" >> /home/tango4/.tango/tango.conf
+echo "daemon=1" >> /home/tango4/.tango/tango.conf
+echo "maxconnections=250" >> /home/tango4/.tango/tango.conf
+echo "masternode=1" >> /home/tango4/.tango/tango.conf
+echo "rpcport=8487" >> /home/tango4/.tango/tango.conf
+echo "listen=0" >> /home/tango4/.tango/tango.conf
+echo "externalip=$(hostname  -I | cut -f1 -d' '):8484" >> /home/tango4/.tango/tango.conf
+echo "masternodeprivkey=$privkey" >> /home/tango4/.tango/tango.conf
+echo "addnode=192.250.236.139" >> /home/tango4/.tango/tango.conf
+echo "addnode=155.138.224.172" >> /home/tango/.tango/tango.conf
+echo "addnode=45.77.226.105" >> /home/tango4/.tango/tango.conf
+echo "addnode=195.181.216.136" >> /home/tango4/.tango/tango.conf
+echo "addnode=194.48.168.103" >> /home/tango4/.tango/tango.conf
+echo "addnode=194.182.77.240" >> /home/tango4/.tango/tango.conf
+echo "addnode=199.247.0.128" >> /home/tango4/.tango/tango.conf
+echo "addnode=207.246.68.57" >> /home/tango4/.tango/tango.conf
+echo "addnode=81.2.255.167" >> /home/tango4/.tango/tango.conf
+echo "addnode=45.76.134.69" >> /home/tango4/.tango/tango.conf
+echo "addnode=80.211.201.13" >> /home/tango4/.tango/tango.conf
+sleep 5 
+fi
+echo "Syncing first node, please wait...";
+northernd -datadir=/home/tango/.tango -daemon
+sleep 10 
+until northern-cli -datadir=/home/tango/.tango mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+echo -e ${GREEN}"First node is fully synced. You 1st masternode is running!"${NC}
+sleep 10
+echo "Syncing second node, please wait...";
+northernd -datadir=/home/tango2/.tango -daemon
+sleep 10 
+until northern-cli -datadir=/home/tango2/.tango mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+echo -e ${GREEN}"Second node is fully synced. You second masternode is running!"${NC}
+sleep 10
+echo "Syncing third node, please wait...";
+northernd -datadir=/home/tago3/.tango -daemon
+sleep 10 
+until northern-cli -datadir=/home/tango3/.tango mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+echo -e ${GREEN}"Third node is fully synced. You third masternode is running!"${NC}
+sleep 10
+echo "Syncing fourth node, please wait...";
+northernd -datadir=/home/tango4/.tango -daemon
+sleep 10 
+until northern-cli -datadir=/home/tango4/.tango mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+echo -e ${GREEN}"Last node is fully synced. You fourth masternode is running!"${NC}
+echo ""
+echo -e ${GREEN}"Congrats! Your TNGO Masternodes are now installed and started. Please wait from 10-20 minutes in order to give the masternode enough time to sync, then start the node from your wallet, Debug console option"${NC}
+echo "The END. You can close now the SSH terminal session";
