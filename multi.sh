@@ -182,7 +182,7 @@ until tango-cli -datadir=/home/tango2/.tango mnsync status | grep -m 1 '"IsBlock
 echo -e ${GREEN}"Second node is fully synced. You second masternode is running!"${NC}
 sleep 10
 echo "Syncing third node, please wait...";
-tangod -datadir=/home/tago3/.tango -daemon
+tangod -datadir=/home/tango3/.tango -daemon
 sleep 10 
 until tango-cli -datadir=/home/tango3/.tango mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Third node is fully synced. You third masternode is running!"${NC}
