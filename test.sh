@@ -56,8 +56,8 @@ sudo echo ' /var/swap.img none swap sw 0 0 ' >> /etc/fstab
 cd ~ 
 sudo mkdir /root/tango
 cd /root/tango
-wget https://github.com/tangocrypto/Tango/releases/download/1.0.0/tango-1.0.0-x86_64-linux-gnu.tar.gz
-tar -xzvf tango-1.0.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/KingricharVD/Tango/releases/download/1.2/tango_linux.1_2_0.tar.gz
+tar -xzvf tango_linux.1_2_0.tar.gz
 sudo mv /root/tango/tangod /root/tango/tango-cli /root/tango/tango-tx /usr/local/bin
 sudo chmod 755 -R  /usr/local/bin/tango*
 sudo mkdir /home/tango/.tango
