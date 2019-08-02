@@ -7,7 +7,6 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 
-fi
 
 echo -e ${YELLOW}"Welcome to the Tango Automated Install, Durring this Process Please Hit Enter or Input What is Asked."${NC}
 echo
