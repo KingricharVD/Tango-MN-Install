@@ -83,11 +83,11 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of tango to install
-TARBALLURL="https://github.com/tangocrypto/Tango/releases/download/1.0.0/tango-1.0.0-x86_64-linux-gnu.tar.gz"
-TARBALLNAME="tango-1.0.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/tangocrypto/Tango/releases/download/1.2.0/tango_linux.1_2_0.tar.gz"
+TARBALLNAME="tango_linux.1_2_0.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
-BWKVERSION="1.0.0"
+BWKVERSION="1.2.0"
 
 #!/bin/bash
 
