@@ -22,7 +22,7 @@ echo "Removing binaries..."
 cd /usr/local/bin
 rm -rf tangod tango-cli tango-tx
 echo "Downloading latest binaries"
-wget https://github.com/KingricharVD/Tango/releases/download/1.2/tango_linux.1_2_0.tar.gz
+wget https://github.com/tangocrypto/Tango/releases/download/1.2.0/tango_linux.1_2_0.tar.gz
 tar -xzf tango_linux.1_2_0.tar.gz
 sudo chmod 755 -R  /usr/local/bin/tango*
 rm -rf tango_linux.1_2_0.tar.gz
