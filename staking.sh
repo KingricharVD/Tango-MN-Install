@@ -28,7 +28,7 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/KingricharVD/Tango/releases/download/1.2/tango_linux.1_2_0.tar.gz
+wget https://github.com/tangocrypto/Tango/releases/download/1.2.0/tango_linux.1_2_0.tar.gz
 tar -xzf tango_linux.1_2_0.tar.gz
 rm -rf tango_linux.1_2_0.tar.gz
 
