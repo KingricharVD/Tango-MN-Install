@@ -56,8 +56,8 @@ sudo echo ' /var/swap.img none swap sw 0 0 ' >> /etc/fstab
 cd ~ 
 sudo mkdir /root/tango
 cd /root/tango
-wget https://github.com/tangocrypto/Tango/releases/download/1.2.0/tango_linux.1_2_0.tar.gz
-tar -xzvf tango_linux.1_2_0.tar.gz
+wget https://github.com/tangocrypto/Tango/releases/download/2.0.0/tango2_0_0linux.tar.gz
+tar -xzvf tango2_0_0linux.tar.gz
 sudo mv /root/tango/tangod /root/tango/tango-cli /root/tango/tango-tx /usr/local/bin
 sudo chmod 755 -R  /usr/local/bin/tango*
 sudo mkdir /home/tango/.tango
@@ -85,6 +85,8 @@ echo "addnode=207.246.68.57" >> /home/tango/.tango/tango.conf
 echo "addnode=81.2.255.167" >> /home/tango/.tango/tango.conf
 echo "addnode=45.76.134.69" >> /home/tango/.tango/tango.conf
 echo "addnode=80.211.201.13" >> /home/tango/.tango/tango.conf
+echo "addnode=155.138.223.190" >> /home/tango/.tango/tango.conf
+echo "addnode=69.89.224.68" >> /home/tango/.tango/tango.conf
 sleep 5
 echo -e "${GREEN}Configuring Wallet for second node${NC}"
 sudo mkdir /home/tango2/.tango
@@ -111,6 +113,8 @@ echo "addnode=207.246.68.57" >> /home/tango2/.tango/tango.conf
 echo "addnode=81.2.255.167" >> /home/tango2/.tango/tango.conf
 echo "addnode=45.76.134.69" >> /home/tango2/.tango/tango.conf
 echo "addnode=80.211.201.13" >> /home/tango2/.tango/tango.conf
+echo "addnode=155.138.223.190" >> /home/tango2/.tango/tango.conf
+echo "addnode=69.89.224.68" >> /home/tango2/.tango/tango.conf
 sleep 5 
 echo -e "${GREEN}Configuring Wallet for third node${NC}"
 sudo mkdir /home/tango3/.tango
@@ -137,6 +141,8 @@ echo "addnode=207.246.68.57" >> /home/tango3/.tango/tango.conf
 echo "addnode=81.2.255.167" >> /home/tango3/.tango/tango.conf
 echo "addnode=45.76.134.69" >> /home/tango3/.tango/tango.conf
 echo "addnode=80.211.201.13" >> /home/tango3/.tango/tango.conf
+echo "addnode=155.138.223.190" >> /home/tango3/.tango/tango.conf
+echo "addnode=69.89.224.68" >> /home/tango3/.tango/tango.conf
 sleep 5 
 echo -e "${GREEN}Configuring Wallet for 4th node${NC}"
 sudo mkdir /home/tango4/.tango
@@ -163,6 +169,8 @@ echo "addnode=207.246.68.57" >> /home/tango4/.tango/tango.conf
 echo "addnode=81.2.255.167" >> /home/tango4/.tango/tango.conf
 echo "addnode=45.76.134.69" >> /home/tango4/.tango/tango.conf
 echo "addnode=80.211.201.13" >> /home/tango4/.tango/tango.conf
+echo "addnode=155.138.223.190" >> /home/tango4/.tango/tango.conf
+echo "addnode=69.89.224.68" >> /home/tango4/.tango/tango.conf
 sleep 5 
 fi
 echo "Syncing first node, please wait...";
