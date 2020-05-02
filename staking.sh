@@ -28,9 +28,9 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/tangocrypto/Tango/releases/download/1.0.0/tango-1.0.0-x86_64-linux-gnu.tar.gz
-tar -xzf tango-1.0.0-x86_64-linux-gnu.tar.gz
-rm -rf tango-1.0.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/tangocrypto/Tango/releases/download/3.0.0/tango3_0_0_linux.tar.gz
+tar -xzf tango3_0_0_linux.tar.gz
+rm -rf tango3_0_0_linux.tar.gz
 
 sudo apt-get install -y ufw
 sudo ufw allow ssh/tcp
